@@ -72,14 +72,3 @@ window.addEventListener("resize", () => {
   sizeCanvas();
   drawNetwork();
 });
-
-const accessForm = document.getElementById("accessForm");
-const formNote = document.getElementById("formNote");
-
-accessForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const data = new FormData(accessForm);
-  const email = data.get("email");
-  formNote.textContent = `Thanks. Early access interest recorded for ${email}.`;
-  accessForm.reset();
-});
