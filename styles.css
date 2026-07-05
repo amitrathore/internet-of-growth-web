@@ -655,16 +655,19 @@ select:focus-visible {
 }
 
 .agent-card.featured {
-  color: var(--white);
-  border-color: rgba(0, 212, 255, 0.24);
+  color: var(--charcoal);
+  border-color: rgba(0, 212, 255, 0.38);
   background:
-    linear-gradient(145deg, #11161f, #07192b 60%, #06251f),
-    var(--charcoal);
+    linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(232, 248, 255, 0.78)),
+    linear-gradient(120deg, rgba(0, 212, 255, 0.14), rgba(0, 185, 133, 0.12));
+  box-shadow:
+    0 24px 68px rgba(21, 108, 255, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.72);
 }
 
 .agent-card.featured p,
 .agent-card.featured dd {
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--muted);
 }
 
 .status {
