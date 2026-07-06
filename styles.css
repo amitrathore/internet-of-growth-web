@@ -559,6 +559,7 @@ iframe:focus-visible {
 .step-grid,
 .machines,
 .vision,
+.pricing,
 .early,
 .footer,
 .signal-map,
@@ -952,6 +953,145 @@ dd {
   font-weight: 800;
 }
 
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 1fr 1fr;
+  gap: 14px;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 420px;
+  padding: 28px;
+  border: 1px solid rgba(21, 108, 255, 0.12);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.72)),
+    linear-gradient(120deg, rgba(21, 108, 255, 0.07), rgba(0, 185, 133, 0.04));
+  box-shadow: 0 20px 58px rgba(21, 24, 29, 0.06);
+}
+
+.pricing-card.primary {
+  border-color: rgba(0, 212, 255, 0.34);
+  background:
+    linear-gradient(145deg, rgba(5, 7, 10, 0.98), rgba(12, 28, 47, 0.96) 60%, rgba(5, 52, 41, 0.92)),
+    var(--black);
+  box-shadow:
+    0 30px 82px rgba(21, 108, 255, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.pricing-card > span {
+  width: fit-content;
+  margin-bottom: 26px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: var(--electric);
+  background: rgba(21, 108, 255, 0.08);
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.pricing-card.primary > span {
+  color: var(--cyan);
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.pricing-card h3 {
+  margin-bottom: 18px;
+  color: var(--charcoal);
+  font-family: "Space Grotesk", ui-sans-serif, sans-serif;
+  font-size: clamp(2rem, 3vw, 3.4rem);
+  line-height: 0.95;
+}
+
+.pricing-card.primary h3,
+.pricing-card.primary p,
+.pricing-card.primary li {
+  color: var(--white);
+}
+
+.pricing-card h3 span {
+  color: var(--muted);
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.pricing-card.primary h3 span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.pricing-card p {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.pricing-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 20px 0 28px;
+  padding-left: 18px;
+}
+
+.pricing-card li {
+  color: var(--muted);
+}
+
+.pricing-card a {
+  margin-top: auto;
+  color: var(--electric);
+  font-weight: 900;
+}
+
+.pricing-card .button {
+  width: fit-content;
+  color: var(--white);
+}
+
+.pricing-offer {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.55fr) 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: 14px;
+  padding: 24px 28px;
+  border: 1px solid rgba(0, 185, 133, 0.26);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(120deg, rgba(0, 212, 255, 0.12), transparent 48%),
+    linear-gradient(290deg, rgba(0, 185, 133, 0.14), transparent 50%),
+    rgba(255, 255, 255, 0.78);
+  box-shadow: 0 20px 58px rgba(21, 24, 29, 0.055);
+}
+
+.pricing-offer span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.pricing-offer strong {
+  display: block;
+  margin-top: 6px;
+  font-family: "Space Grotesk", ui-sans-serif, sans-serif;
+  font-size: clamp(1.5rem, 2.4vw, 2.35rem);
+  line-height: 1;
+}
+
+.pricing-offer p {
+  margin: 0;
+  color: var(--charcoal);
+  font-size: clamp(1.08rem, 2vw, 1.42rem);
+  font-weight: 760;
+  line-height: 1.25;
+}
+
 .early {
   display: grid;
   grid-template-columns: 0.9fr 0.9fr;
@@ -1106,6 +1246,7 @@ dd {
   .hero,
   .machines,
   .vision,
+  .pricing-offer,
   .early {
     grid-template-columns: 1fr;
   }
@@ -1122,6 +1263,7 @@ dd {
   .fracture-grid,
   .agent-grid,
   .step-grid,
+  .pricing-grid,
   .signal-map {
     grid-template-columns: 1fr;
   }
@@ -1180,6 +1322,19 @@ dd {
   .hero-system {
     width: min(100%, 310px);
     min-height: 310px;
+  }
+
+  .pricing-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .pricing-card h3 {
+    font-size: 2.25rem;
+  }
+
+  .pricing-offer {
+    padding: 22px;
   }
 
   .system-topology::before {
