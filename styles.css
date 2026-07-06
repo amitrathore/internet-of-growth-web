@@ -801,8 +801,13 @@ iframe:focus-visible {
 }
 
 .status.live {
-  color: #003c2d;
-  background: linear-gradient(115deg, rgba(0, 185, 133, 0.18), rgba(0, 212, 255, 0.16));
+  color: #003224;
+  background:
+    linear-gradient(115deg, rgba(40, 255, 169, 0.68), rgba(0, 185, 133, 0.46)),
+    rgba(225, 255, 242, 0.92);
+  box-shadow:
+    0 0 0 1px rgba(0, 185, 133, 0.28),
+    0 8px 20px rgba(0, 185, 133, 0.18);
 }
 
 .status.planned {
