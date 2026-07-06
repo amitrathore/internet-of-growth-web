@@ -15,6 +15,9 @@
   --sun: #f8d84a;
   --radius: 8px;
   --max: 1180px;
+  --gutter: clamp(24px, 5vw, 72px);
+  --content-gutter: max(var(--gutter), calc((100vw - var(--max)) / 2));
+  --legal-gutter: max(var(--gutter), calc((100vw - 900px) / 2));
 }
 
 * {
@@ -61,7 +64,7 @@ a {
   grid-template-columns: auto 1fr auto;
   gap: 28px;
   align-items: center;
-  width: min(calc(100% - 32px), var(--max));
+  width: min(calc(100% - var(--gutter) - var(--gutter)), var(--max));
   padding: 10px 12px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
@@ -123,7 +126,7 @@ a {
 }
 
 section {
-  padding: 112px 24px;
+  padding: 112px var(--gutter);
 }
 
 .section-dark {
@@ -858,7 +861,7 @@ dd {
   align-items: center;
   width: 100%;
   margin-inline: 0;
-  padding: 112px max(24px, calc((100vw - var(--max)) / 2));
+  padding: 112px var(--content-gutter);
   border: 0;
   border-radius: 0;
   background:
@@ -1098,7 +1101,7 @@ dd {
   gap: 50px;
   width: 100%;
   margin-inline: 0;
-  padding: 112px max(24px, calc((100vw - var(--max)) / 2));
+  padding: 112px var(--content-gutter);
   border: 0;
   border-radius: 0;
   background:
@@ -1125,7 +1128,7 @@ dd {
   display: grid;
   gap: 18px;
   min-height: 58svh;
-  padding: 172px max(24px, calc((100vw - 900px) / 2)) 86px;
+  padding: 172px var(--legal-gutter) 86px;
 }
 
 .policy-hero h1 {
@@ -1152,7 +1155,7 @@ dd {
 .policy-body {
   display: grid;
   gap: 32px;
-  padding-inline: max(24px, calc((100vw - 900px) / 2));
+  padding-inline: var(--legal-gutter);
 }
 
 .policy-body article {
@@ -1203,7 +1206,7 @@ dd {
   gap: 24px;
   width: 100%;
   margin-inline: 0;
-  padding: 34px max(24px, calc((100vw - var(--max)) / 2));
+  padding: 34px var(--content-gutter);
   color: rgba(255, 255, 255, 0.68);
   background: var(--black);
 }
@@ -1283,12 +1286,12 @@ dd {
 
 @media (max-width: 640px) {
   section {
-    padding: 82px 18px;
+    padding: 82px var(--gutter);
   }
 
   .nav {
     top: 10px;
-    width: calc(100% - 20px);
+    width: calc(100% - var(--gutter) - var(--gutter));
   }
 
   .brand span:last-child {
