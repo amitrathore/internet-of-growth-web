@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Internet of Growth preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#061b41"/>
+      <stop offset="42%" stop-color="#05070a"/>
+      <stop offset="100%" stop-color="#00271f"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="68%" cy="48%" r="48%">
+      <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.28"/>
+      <stop offset="54%" stop-color="#156cff" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#05070a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="greenGlow" cx="86%" cy="70%" r="42%">
+      <stop offset="0%" stop-color="#00b985" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00b985" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="48%" stop-color="#156cff"/>
+      <stop offset="100%" stop-color="#00b985"/>
+    </linearGradient>
+    <linearGradient id="warmAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="48%" stop-color="#f8d84a"/>
+      <stop offset="100%" stop-color="#00b985"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="62" height="62" patternUnits="userSpaceOnUse">
+      <path d="M62 0H0V62" fill="none" stroke="#ffffff" stroke-opacity="0.065" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#cyanGlow)"/>
+  <rect width="1200" height="630" fill="url(#greenGlow)"/>
+  <path d="M0 575L1200 532V630H0Z" fill="#001f18" opacity="0.62"/>
+  <path d="M44 92L171 92" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+
+  <g transform="translate(64 64)">
+    <circle cx="18" cy="18" r="12" fill="none" stroke="url(#accent)" stroke-width="4" filter="url(#softGlow)"/>
+    <circle cx="18" cy="18" r="5.5" fill="#05070a" stroke="#bff8ff" stroke-opacity="0.5"/>
+    <text x="48" y="25" fill="#ffffff" font-size="28" font-weight="760" font-family="Instrument Sans, Inter, Arial, sans-serif">Internet of Growth</text>
+  </g>
+
+  <g transform="translate(64 160)">
+    <text fill="#00d4ff" font-size="17" font-weight="800" letter-spacing="2.5" font-family="Space Grotesk, Inter, Arial, sans-serif">CLOSED-LOOP DECISION INTELLIGENCE</text>
+    <text y="84" fill="#ffffff" font-size="78" font-weight="760" font-family="Space Grotesk, Inter, Arial, sans-serif">The growth</text>
+    <text y="166" fill="#ffffff" font-size="78" font-weight="760" font-family="Space Grotesk, Inter, Arial, sans-serif">operating layer</text>
+    <text y="248" fill="#d5dde8" font-size="32" font-weight="520" font-family="Instrument Sans, Inter, Arial, sans-serif">for Direct-to-Consumer brands.</text>
+    <text y="310" fill="#ffffff" fill-opacity="0.78" font-size="22" font-weight="650" font-family="Instrument Sans, Inter, Arial, sans-serif">Powered by </text>
+    <text x="132" y="310" fill="#ffffff" font-size="22" font-weight="800" font-family="Instrument Sans, Inter, Arial, sans-serif">Outcome Machines</text>
+  </g>
+
+  <g transform="translate(642 116) scale(0.92) rotate(-4 224 210)">
+    <rect x="28" y="22" width="476" height="390" rx="34" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.16"/>
+    <rect x="28" y="22" width="476" height="390" rx="34" fill="url(#grid)" opacity="0.9"/>
+    <ellipse cx="266" cy="218" rx="190" ry="145" fill="none" stroke="#ffffff" stroke-opacity="0.11"/>
+    <path d="M104 226C170 198 224 198 292 226S416 254 468 220" fill="none" stroke="#00d4ff" stroke-opacity="0.36" stroke-width="2"/>
+    <path d="M448 305C388 410 172 392 104 308" fill="none" stroke="#00d4ff" stroke-opacity="0.42" stroke-width="2"/>
+    <path d="M136 132L226 208M398 126L306 208M182 344L228 250M362 340L306 250" fill="none" stroke="#ffffff" stroke-opacity="0.2"/>
+
+    <g>
+      <rect x="146" y="172" width="240" height="126" rx="22" fill="#071321" stroke="#2a4563" stroke-width="1.5"/>
+      <text x="170" y="210" fill="#00d4ff" font-size="15" font-weight="800" letter-spacing="1.7" font-family="Space Grotesk, Inter, Arial, sans-serif">OUTCOME MACHINES</text>
+      <text x="170" y="254" fill="#ffffff" font-size="34" font-weight="760" font-family="Space Grotesk, Inter, Arial, sans-serif">Decide.</text>
+      <text x="170" y="282" fill="#bdc7d4" font-size="18" font-weight="650" font-family="Instrument Sans, Inter, Arial, sans-serif">measure. learn.</text>
+    </g>
+
+    <g fill="#101c28" stroke="#ffffff" stroke-opacity="0.18">
+      <rect x="0" y="160" width="130" height="126" rx="18"/>
+      <rect x="402" y="160" width="130" height="126" rx="18"/>
+      <rect x="206" y="0" width="116" height="42" rx="21"/>
+      <rect x="382" y="70" width="116" height="42" rx="21"/>
+      <rect x="88" y="342" width="116" height="42" rx="21"/>
+      <rect x="336" y="342" width="116" height="42" rx="21"/>
+    </g>
+
+    <g fill="#ffffff" font-family="Instrument Sans, Inter, Arial, sans-serif" font-weight="760" font-size="16">
+      <text x="35" y="205">Signals</text>
+      <text x="35" y="248">Orders</text>
+      <text x="438" y="205">Actions</text>
+      <text x="438" y="248">Outcomes</text>
+      <text x="232" y="27">Agents</text>
+      <text x="419" y="97">Pricing</text>
+      <text x="111" y="369">Inventory</text>
+      <text x="361" y="369">Retention</text>
+    </g>
+
+    <g filter="url(#softGlow)">
+      <circle cx="126" cy="222" r="5" fill="#00d4ff"/>
+      <circle cx="404" cy="222" r="5" fill="#00b985"/>
+      <circle cx="264" cy="42" r="5" fill="#00d4ff"/>
+      <circle cx="398" cy="112" r="5" fill="#8b5cff"/>
+      <circle cx="204" cy="342" r="5" fill="#00b985"/>
+      <circle cx="336" cy="342" r="5" fill="#ff4fd8"/>
+    </g>
+
+    <rect x="142" y="398" width="250" height="42" rx="21" fill="url(#warmAccent)"/>
+    <text x="215" y="425" fill="#05070a" font-size="14" font-weight="900" letter-spacing="2" font-family="Space Grotesk, Inter, Arial, sans-serif">CLOSED LOOP</text>
+  </g>
+</svg>
