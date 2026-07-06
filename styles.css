@@ -1207,6 +1207,111 @@ dd {
   font-weight: 800;
 }
 
+.team-hero h1 {
+  max-width: 1040px;
+}
+
+.team-body {
+  display: grid;
+  gap: 36px;
+  padding-inline: var(--content-gutter);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: min(100%, var(--max));
+  margin-inline: auto;
+}
+
+.team-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  min-height: 340px;
+  padding: 32px;
+  border: 1px solid rgba(21, 108, 255, 0.12);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.72)),
+    linear-gradient(120deg, rgba(21, 108, 255, 0.08), rgba(0, 185, 133, 0.05));
+  box-shadow: 0 22px 60px rgba(21, 24, 29, 0.07);
+}
+
+.team-card:nth-child(2) {
+  transform: translateY(28px);
+}
+
+.team-avatar {
+  display: grid;
+  place-items: center;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(0, 212, 255, 0.36);
+  border-radius: 50%;
+  color: var(--electric);
+  background:
+    radial-gradient(circle at 35% 25%, rgba(0, 212, 255, 0.2), transparent 52%),
+    rgba(255, 255, 255, 0.78);
+  font-family: "Space Grotesk", ui-sans-serif, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  box-shadow: 0 16px 38px rgba(21, 108, 255, 0.12);
+}
+
+.team-role {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--electric);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.team-card h3 {
+  margin-bottom: 14px;
+  color: var(--charcoal);
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+.team-card p {
+  color: var(--muted);
+  font-size: 1.03rem;
+}
+
+.team-principle {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.5fr) 1fr;
+  gap: 24px;
+  align-items: center;
+  width: min(100%, var(--max));
+  margin: 36px auto 0;
+  padding: 26px 30px;
+  border: 1px solid rgba(0, 185, 133, 0.24);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(120deg, rgba(0, 212, 255, 0.11), transparent 46%),
+    linear-gradient(290deg, rgba(0, 185, 133, 0.13), transparent 52%),
+    rgba(255, 255, 255, 0.8);
+}
+
+.team-principle span {
+  color: var(--electric);
+  font-family: "Space Grotesk", ui-sans-serif, sans-serif;
+  font-weight: 900;
+}
+
+.team-principle p {
+  margin: 0;
+  color: var(--charcoal);
+  font-size: clamp(1.08rem, 1.8vw, 1.34rem);
+  font-weight: 720;
+  line-height: 1.3;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -1274,8 +1379,14 @@ dd {
   .agent-grid,
   .step-grid,
   .pricing-grid,
+  .team-grid,
+  .team-principle,
   .signal-map {
     grid-template-columns: 1fr;
+  }
+
+  .team-card:nth-child(2) {
+    transform: none;
   }
 
   .map-spine {
@@ -1345,6 +1456,20 @@ dd {
 
   .pricing-offer {
     padding: 22px;
+  }
+
+  .team-body {
+    padding-inline: var(--gutter);
+  }
+
+  .team-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 26px;
+  }
+
+  .team-principle {
+    padding: 24px;
   }
 
   .pricing-offer strong {
