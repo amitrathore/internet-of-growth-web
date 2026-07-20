@@ -144,7 +144,7 @@ h3 { font-size: 1.35rem; line-height: 1.1; }
 .goal-card.retention::after { border-color: rgba(118,230,180,.2); }
 .goal-top { display: flex; justify-content: space-between; color: rgba(255,255,255,.4); font-size: .72rem; letter-spacing: .09em; text-transform: uppercase; }
 .goal-top span { color: var(--mint); font-weight: 700; }
-.goal-number { display: block; margin: 70px 0 22px; color: var(--lime); font: 600 clamp(4.5rem, 8vw, 8rem)/.8 "Space Grotesk", sans-serif; letter-spacing: -.07em; }
+.goal-number { display: block; margin: 70px 0 22px; color: var(--lime); font: 600 clamp(3.8rem, 6vw, 6.4rem)/.82 "Space Grotesk", sans-serif; letter-spacing: -.07em; white-space: nowrap; }
 .retention .goal-number { color: var(--mint); }
 .goal-card h3 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
 .goal-card p { max-width: 540px; color: rgba(255,255,255,.61); }
