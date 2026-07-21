@@ -190,6 +190,18 @@ h3 { font-size: 1.35rem; line-height: 1.1; }
 .offer-row > span { color: var(--muted); }
 .offer-row > b { color: #3974df; }
 .offer-note { width: min(100%, var(--max)); margin: 22px auto 0; color: var(--muted); font-size: .82rem; }
+.application-panel { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(35px, 6vw, 80px); width: min(100%, var(--max)); margin: 58px auto 0; padding: clamp(30px, 5vw, 58px); color: var(--white); background: radial-gradient(circle at 0 0, rgba(78,140,255,.2), transparent 34%), var(--forest); box-shadow: 0 30px 80px rgba(8,18,15,.16); }
+.application-copy { align-self: center; }
+.application-copy .eyebrow { color: var(--lime); }
+.application-copy h3 { max-width: 470px; margin-bottom: 20px; font-size: clamp(2rem, 3.4vw, 3.4rem); }
+.application-copy > p:not(.eyebrow) { max-width: 520px; color: rgba(255,255,255,.6); }
+.application-copy .button { margin-top: 18px; }
+.fit-list { display: grid; }
+.fit-list article { display: grid; grid-template-columns: 38px 1fr; gap: 18px; padding: 23px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+.fit-list article:first-child { border-top: 1px solid rgba(255,255,255,.12); }
+.fit-list article > span { display: grid; place-items: center; width: 30px; height: 30px; color: var(--forest); border-radius: 50%; background: var(--lime); font: 700 .65rem "Space Grotesk", sans-serif; }
+.fit-list strong { display: block; margin-bottom: 5px; font: 600 1.08rem "Space Grotesk", sans-serif; }
+.fit-list p { margin: 0; color: rgba(255,255,255,.56); font-size: .9rem; }
 .close { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(45px, 7vw, 100px); align-items: center; color: var(--white); background: radial-gradient(circle at 20% 0, rgba(78,140,255,.18), transparent 32%), var(--forest); }
 .close-copy h2 { font-size: clamp(2.4rem, 4.5vw, 4.8rem); }
 .close-copy > p:last-child { max-width: 720px; color: rgba(255,255,255,.58); font-size: 1.08rem; }
@@ -220,6 +232,7 @@ footer nav { display: flex; gap: 18px; }
   .loop-track span { margin-bottom: 25px; box-shadow: none; }
   .plan-heading { grid-template-columns: 1fr 1fr; }
   .plan-heading .eyebrow { grid-column: 1 / -1; }
+  .application-panel { grid-template-columns: 1fr; }
   .close { grid-template-columns: 1fr; }
 }
 @media (max-width: 720px) {
