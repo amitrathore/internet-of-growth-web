@@ -51,7 +51,8 @@ a { color: inherit; text-decoration: none; }
   background: url("/assets/internet-of-growth-logo.png") center / 36px auto no-repeat, #fff;
   box-shadow: 0 0 24px rgba(78,140,255,.3);
 }
-.proposal-label { color: rgba(255,255,255,.55); font-size: .83rem; letter-spacing: .04em; }
+.proposal-label { display: inline-flex; align-items: center; gap: 8px; color: rgba(255,255,255,.62); font-size: .78rem; letter-spacing: .04em; }
+.proposal-label i { width: 6px; height: 6px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 12px rgba(185,240,85,.7); }
 .nav-action { justify-self: end; color: var(--lime); font-size: .86rem; font-weight: 700; }
 .hero {
   position: relative;
