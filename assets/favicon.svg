@@ -1,25 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Internet of Growth">
   <defs>
-    <radialGradient id="bg" cx="28%" cy="24%" r="82%">
-      <stop offset="0%" stop-color="#123a78"/>
-      <stop offset="48%" stop-color="#05070a"/>
-      <stop offset="100%" stop-color="#001f18"/>
+    <radialGradient id="bg" cx="28%" cy="20%" r="95%">
+      <stop offset="0" stop-color="#123a78"/>
+      <stop offset="0.5" stop-color="#05070a"/>
+      <stop offset="1" stop-color="#00271f"/>
     </radialGradient>
-    <linearGradient id="ring" x1="10" y1="8" x2="54" y2="56">
-      <stop offset="0%" stop-color="#00d4ff"/>
-      <stop offset="52%" stop-color="#156cff"/>
-      <stop offset="100%" stop-color="#00b985"/>
+    <linearGradient id="mark" x1="9" y1="16" x2="55" y2="48">
+      <stop offset="0" stop-color="#00d4ff"/>
+      <stop offset="0.5" stop-color="#156cff"/>
+      <stop offset="1" stop-color="#00b985"/>
     </linearGradient>
-    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="glow" x="-50%" y="-80%" width="200%" height="260%">
+      <feGaussianBlur stdDeviation="2.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
   <rect width="64" height="64" rx="14" fill="url(#bg)"/>
-  <path d="M14 32c0-9.94 8.06-18 18-18s18 8.06 18 18-8.06 18-18 18-18-8.06-18-18Z" fill="none" stroke="url(#ring)" stroke-width="5" filter="url(#glow)"/>
-  <path d="M22 32c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10-10-4.48-10-10Z" fill="#05070a" stroke="rgba(255,255,255,0.28)" stroke-width="1.5"/>
-  <path d="M32 13v9M32 42v9M13 32h9M42 32h9" stroke="#00d4ff" stroke-width="2" stroke-linecap="round" opacity="0.78"/>
+  <path d="M9 32c0-8.2 5.4-13.5 12.4-13.5 10.7 0 15.5 13.5 23.2 13.5C51 32 55 27.1 55 19" fill="none" stroke="url(#mark)" stroke-width="5.2" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M9 32c0 8.2 5.4 13.5 12.4 13.5C32.1 45.5 36.9 32 44.6 32 51 32 55 36.9 55 45" fill="none" stroke="url(#mark)" stroke-width="5.2" stroke-linecap="round" filter="url(#glow)"/>
+  <circle cx="32" cy="32" r="3.2" fill="#e5fcff"/>
 </svg>
